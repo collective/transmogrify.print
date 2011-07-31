@@ -9,6 +9,8 @@ Changelog
   (instead of ``print``).
   [aclark]
 
+* Show ``keys`` being used in README
+
 0.2.0 (2011-07-31)
 ------------------
 

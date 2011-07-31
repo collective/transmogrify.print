@@ -57,6 +57,7 @@ Then you may use it in your pipelines, e.g.::
 
     [print]
     blueprint = transmogrify.print
+    keys = _path
 
     [schema]
     blueprint = plone.app.transmogrifier.atschemaupdater

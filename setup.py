@@ -3,7 +3,7 @@ import os
 
 setup(
     name='transmogrify.print',
-    version='0.2.0',
+    version='0.3.0',
     author='Alex Clark',
     author_email='aclark@aclark.net',
     description='Transmogrifier blueprint to print pipeline item keys',
