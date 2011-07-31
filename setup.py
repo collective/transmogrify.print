@@ -3,7 +3,7 @@ import os
 
 setup(
     name='transmogrify.print',
-    version='0.1.0',
+    version='0.2.0',
     author='Alex Clark',
     author_email='aclark@aclark.net',
     description='Transmogrifier blueprint to print item keys',
@@ -11,6 +11,7 @@ setup(
     entry_points = {
         'z3c.autoinclude.plugin': 'target = plone',
     },
+    include_package_data=True,
     install_requires=[
         'collective.transmogrifier',
     ],
