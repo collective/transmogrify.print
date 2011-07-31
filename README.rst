@@ -35,6 +35,7 @@ Make sure to require ``transmogrify.print`` in your project, e.g.::
         install_requires=[
             'plone.app.transmogrifier',
             'transmogrify.filesystem',
+            'transmogrify.print',
         ]
     )
 
