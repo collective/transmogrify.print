@@ -8,6 +8,9 @@ Changelog
 * Fix docs
   [aclark]
 
+* Note the existence of ``collective.transmogrifier.sections.logger`` which does
+  a better job of the same thing.
+
 0.3.0 (2011-07-31)
 ------------------
 

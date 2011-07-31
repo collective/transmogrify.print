@@ -2,6 +2,8 @@
 Introduction
 ============
 
+.. Note:: As of version 1.3, Transmogrifier has a feature to handle printing called: collective.transmogrifier.sections.logger, making this blueprint effectively DOA. Though you may still prefer this one if you like to type less (because the name is shorter. ;-))
+
 This `Transmogrifier`_ blueprint is based on ``collective.transmogrifier.sections.tests.PrettyPrinter``, which anyone can use in their project by creating a utility like so::
 
     <utility
