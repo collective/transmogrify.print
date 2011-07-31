@@ -6,7 +6,7 @@ setup(
     version='0.2.0',
     author='Alex Clark',
     author_email='aclark@aclark.net',
-    description='Transmogrifier blueprint to print item keys',
+    description='Transmogrifier blueprint to print pipeline item keys',
     long_description=open('README.rst').read() + open(os.path.join('docs', 'HISTORY.txt')).read(),
     entry_points = {
         'z3c.autoinclude.plugin': 'target = plone',
