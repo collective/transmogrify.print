@@ -1,8 +1,9 @@
-# Based on code from: collective.transmogrifier.sections.tests;
+# Based on code from: collective.transmogrifier.sections.tests.PrettyPrinter
 # aimed at easier consumption.
-from collective.transmogrifier.interfaces import ISection, ISectionBluePrint
-import pprint
 
+from collective.transmogrifier.interfaces import ISection, ISectionBlueprint
+from zope.interface import classProvides, implements
+import pprint
 
 class PrettyPrinter(object):
     classProvides(ISectionBlueprint)
@@ -11,10 +12,14 @@ class PrettyPrinter(object):
     def __init__(self, transmogrifier, name, options, previous):
         self.previous = previous
         self.pprint = pprint.PrettyPrinter().pprint
+        if 'keys' in options:
+            self.keys = options['keys']
+        else:
+            self.keys = None
 
     def __iter__(self):
         def undict(source):
-            """ Recurse trough the structure and convert dictionaries 
+            """ Recurse through the structure and convert dictionaries 
                 into sorted lists
             """
             res = list()
@@ -31,6 +36,20 @@ class PrettyPrinter(object):
             return res
 
         for item in self.previous:
-            self.pprint(undict(item))
-            yield item
+            if not self.keys is None:
+                # Create a new dict to hold our keys
+                newdict={}
+                for key in self.keys.split():
+                    if key in item:
+                        newdict[key] = item[key]
+
+                        # XXX We don't really need to 
+                        # re-dict then undict, but it's
+                        # an easy way to provide output
+                        # similar to what Transmogrifier
+                        # itself provides.
+                        self.pprint(undict(newdict))
+            else: 
+                self.pprint(undict(item))
+                yield item
 
