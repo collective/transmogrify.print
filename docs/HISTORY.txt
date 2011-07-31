@@ -2,10 +2,17 @@
 Changelog
 =========
 
+0.3.0 (2011-07-31)
+------------------
+
+* Fix blueprint name, should be something unique like ``transmogrify.print``
+  (instead of ``print``).
+  [aclark]
+
 0.2.0 (2011-07-31)
 ------------------
 
-* Fix package data
+* Fix package data, setup.py missing ``include_package_data``.
   [aclark]
 
 0.1.0 (2011-07-31)

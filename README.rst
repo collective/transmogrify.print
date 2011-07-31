@@ -56,7 +56,7 @@ Then you may use it in your pipelines, e.g.::
     file-type = Document
 
     [print]
-    blueprint = print
+    blueprint = transmogrify.print
 
     [schema]
     blueprint = plone.app.transmogrifier.atschemaupdater

@@ -6,6 +6,6 @@
 
     <utility
         component="transmogrify.print.PrettyPrinter"
-        name="print" />
+        name="transmogrify.print" />
 
 </configure>
