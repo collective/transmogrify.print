@@ -2,7 +2,7 @@
 Introduction
 ============
 
-.. Note:: As of version 1.3, Transmogrifier has a feature to handle printing called: collective.transmogrifier.sections.logger, making this blueprint effectively DOA. Though you may still prefer this one if you like to type less (because the name is shorter. ;-))
+.. Note:: As of version 1.3 Transmogrifier provides a similar feature, via a blueprint called: ``collective.transmogrifier.sections.logger``.
 
 This `Transmogrifier`_ blueprint is based on ``collective.transmogrifier.sections.tests.PrettyPrinter``, which anyone can use in their project by creating a utility like so::
 
@@ -20,7 +20,10 @@ Then adding a section to your pipeline like so::
     [print]
     blueprint = print
 
-``transmogrify.print`` has has two advantages over the above approach. One, it adds the utility for you. And two, it allows you to specify a ``keys`` parameter to print individual keys. If no key is provided, it prints the entire item.
+``transmogrify.print`` has has two advantages over the above approach:
+
+    * It adds the utility for you
+    * It allows you to specify a ``keys`` parameter to print individual keys. If no key is provided, it prints the entire item.
 
 .. _`Transmogrifier`: http://pypi.python.org/pypi/collective.transmogrifier
 

@@ -2,14 +2,18 @@
 Changelog
 =========
 
+0.5.0 (2011-08-30)
+------------------
+
+* Fix entry point, now targetting ``transmogrify``
+  [aclark]
+
 0.4.0 (2011-07-31)
 ------------------
 
-* Fix docs
-  [aclark]
-
 * Note the existence of ``collective.transmogrifier.sections.logger`` which does
-  a better job of the same thing.
+  something similar.
+  [aclark]
 
 0.3.0 (2011-07-31)
 ------------------
@@ -19,6 +23,7 @@ Changelog
   [aclark]
 
 * Show ``keys`` being used in README
+  [aclark]
 
 0.2.0 (2011-07-31)
 ------------------
