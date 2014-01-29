@@ -43,12 +43,12 @@ class PrettyPrinter(object):
                     if key in item:
                         newdict[key] = item[key]
 
-                        # XXX We don't really need to 
-                        # re-dict then undict, but it's
-                        # an easy way to provide output
-                        # similar to what Transmogrifier
-                        # itself provides.
-                        self.pprint(undict(newdict))
+                # XXX We don't really need to 
+                # re-dict then undict, but it's
+                # an easy way to provide output
+                # similar to what Transmogrifier
+                # itself provides.
+                self.pprint(undict(newdict))
             else: 
                 self.pprint(undict(item))
                 yield item
