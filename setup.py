@@ -3,11 +3,11 @@ import os
 
 setup(
     name='transmogrify.print',
-    version='0.5.0',
+    version='0.6.0',
     author='Alex Clark',
     author_email='aclark@aclark.net',
     description='Transmogrifier blueprint to print pipeline item keys',
-    long_description=open('README.rst').read() + open(os.path.join('docs', 'HISTORY.txt')).read(),
+    long_description=open('README.rst').read() + open('CHANGES.rst').read(),
     entry_points = {
         'z3c.autoinclude.plugin': 'target = transmogrify',
     },
@@ -19,5 +19,5 @@ setup(
     namespace_packages=[
         'transmogrify',
     ],
-    url='https://github.com/aclark4life/transmogrify.print',
+    url='https://github.com/collective/transmogrify.print',
 )
